@@ -6,9 +6,14 @@ This respository will contain recommendations for data management as well as oth
 ### How to edit this README file
 - https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 
-### Data management and other stuff
+### Trainings and guides for data cleaning, management, analysis, & visualization
 - https://the-turing-way.netlify.com/rdm/rdm.html (Excellent guide on "reproducible data science"; see "Research Data Management" section, in particular)
 - https://datacarpentry.org/lessons/ (Field-specific trainings on data cleaning, management, analysis, and visualization)
-- https://data.research.cornell.edu (See "Best practices" on Cornell's Reserach Data Management Group's main page) 
+- https://data.research.cornell.edu (See "Best practices" on Cornell's Research Data Management Group's main page) 
 - https://www.cscu.cornell.edu/consulting/consulting.php (Link to Cornell's Statistical Consulting Unit)
+
+### Guides for setting up version control using GitHub & R Studio
+- https://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/ (guide w/ simple and with pictures)
+- https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html (guide w/ a bit more detail)
+- https://happygitwithr.com/rstudio-git-github.html (guide w/ even more detail)
 
