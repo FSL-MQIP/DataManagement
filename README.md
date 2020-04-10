@@ -17,7 +17,7 @@ This respository will contain recommendations for data management as well as oth
 - https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html (guide w/ a bit more detail)
 - https://happygitwithr.com/rstudio-git-github.html (guide w/ even more detail)
 
-### Guide for working in RMarkdown
+### Guide for working in R Markdown
 - https://bookdown.org/yihui/rmarkdown/
 
 
