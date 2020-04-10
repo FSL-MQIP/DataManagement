@@ -7,7 +7,7 @@ This respository will contain recommendations for data management as well as oth
 - https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 
 ### Trainings and guides for data cleaning, management, analysis, & visualization
-- [Slides] (Documents/ReproducibleResearch_LabMeeting_DaveKent_102116.pdf) on Reproducible Research from Dave Kent's Oct 2016 lab meeting presentation
+- [Slides] (/Documents/ReproducibleResearch_LabMeeting_DaveKent_102116.pdf) on Reproducible Research from Dave Kent's Oct 2016 lab meeting presentation
 - https://the-turing-way.netlify.com/rdm/rdm.html (Excellent guide on "reproducible data science"; see "Research Data Management" section, in particular)
 - https://datacarpentry.org/lessons/ (Field-specific trainings on data cleaning, management, analysis, and visualization)
 - https://data.research.cornell.edu (See "Best practices" on Cornell's Research Data Management Group's main page) 
