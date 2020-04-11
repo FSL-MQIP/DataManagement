@@ -385,12 +385,12 @@ summary {
 <li><a href="#manual-data"><span class="toc-section-number">3.2.1</span> Manual Data</a></li>
 <li><a href="#digital-data"><span class="toc-section-number">3.2.2</span> Digital Data</a></li>
 </ul></li>
-<li><a href="#excel"><span class="toc-section-number">3.3</span> Excel</a><ul>
-<li><a href="#workbook-organization"><span class="toc-section-number">3.3.1</span> Workbook Organization</a></li>
-<li><a href="#formatting"><span class="toc-section-number">3.3.2</span> Formatting</a></li>
-<li><a href="#different-kinds-of-data"><span class="toc-section-number">3.3.3</span> Different Kinds of Data</a></li>
-<li><a href="#striving-for-simplicity"><span class="toc-section-number">3.3.4</span> Striving for Simplicity</a></li>
 </ul></li>
+<li><a href="#excel"><span class="toc-section-number">4</span> Excel</a><ul>
+<li><a href="#workbook-organization"><span class="toc-section-number">4.1</span> Workbook Organization</a></li>
+<li><a href="#formatting"><span class="toc-section-number">4.2</span> Formatting</a></li>
+<li><a href="#different-kinds-of-data"><span class="toc-section-number">4.3</span> Different Kinds of Data</a></li>
+<li><a href="#striving-for-simplicity"><span class="toc-section-number">4.4</span> Striving for Simplicity</a></li>
 </ul></li>
 </ul>
 </div>
@@ -483,29 +483,29 @@ summary {
 <p>This is especially important if you find yourself doing a repetitive process to copy or derive information from many pieces of data. There is almost always a better method you could learn that is easier and less prone to error.1 If you don’t know where to start or just want some help figuring out how this might be done, please seek help rather than just doing the task manually.</p>
 </div>
 </div>
-<div id="excel" class="section level2">
-<h2><span class="header-section-number">3.3</span> Excel</h2>
-<div id="workbook-organization" class="section level3">
-<h3><span class="header-section-number">3.3.1</span> Workbook Organization</h3>
+</div>
+<div id="excel" class="section level1">
+<h1><span class="header-section-number">4</span> Excel</h1>
+<div id="workbook-organization" class="section level2">
+<h2><span class="header-section-number">4.1</span> Workbook Organization</h2>
 <p>An Excel workbook contains any number of worksheets. Each worksheet should contain at most one data table, and the worksheet should be clearly named based on the information it contains. If a worksheet contains a data table, it should contain no other information. Notes, metadata, and other information independent of the individual rows should be kept on a different sheet, or outside the file. Charts should be kept on a different sheet from the data they’re based on.</p>
 <p>If two worksheets contain different versions of the same information, they should be clearly dated or otherwise easily distinguishable.</p>
 <p>A project can use any number of workbooks and worksheets within those that is appropriate, but if it’s not obviously clear at first glance what data is kept where, it should be detailed in the project’s README file.</p>
 </div>
-<div id="formatting" class="section level3">
-<h3><span class="header-section-number">3.3.2</span> Formatting</h3>
+<div id="formatting" class="section level2">
+<h2><span class="header-section-number">4.2</span> Formatting</h2>
 <p>Formatting in Excel should be used only for the purposes of calling attention to certain phenomena or key pieces of information, and should not be used as a source of informa- tion itself. This is because this kind of information cannot easily be the basis for sorting or filtering, and is lost if the data is exported to formats such as .csv.</p>
 <p>Instead of having certain formatting denote something having happened, for example, add a column to the data table to record it. If you’d like to call attention to that event, consider using conditional formatting, which is a great tool for that task, and helps automates the task of formatting application as well.</p>
 </div>
-<div id="different-kinds-of-data" class="section level3">
-<h3><span class="header-section-number">3.3.3</span> Different Kinds of Data</h3>
+<div id="different-kinds-of-data" class="section level2">
+<h2><span class="header-section-number">4.3</span> Different Kinds of Data</h2>
 <p>Avoid mixing textual and numeric data in raw data and analysis. This eases the process of working programmatically with your numbers (with Excel and R, for example), and allows you to sort and filter your numeric data more easily. When reporting on the data and analysis, this rule need not be followed, but as long as the data is being used by machines instead of humans, it is easier for the machine to read the information separately.</p>
 <p>This means that if you have a data point that includes a number and some meta- information, you should record them in separate columns of your data table. This pertains especially to detection limits with counts. It remains a point of discussion how this kind of information should best be recorded i.e. using &lt;10E vs. 0, but for numbers that you’d ever like to analyze programmatically, it is best by far to keep them separated from any text.</p>
 <p>Additionally, avoid keeping manual calculations alongside raw data. If there is a calculation that Excel can do that you would like to include in your table, write an Excel formula to perform it rather than calculating it yourself and entering it manually. This saves time and energy when working with large data sets or correcting older pieces of data.</p>
 </div>
-<div id="striving-for-simplicity" class="section level3">
-<h3><span class="header-section-number">3.3.4</span> Striving for Simplicity</h3>
+<div id="striving-for-simplicity" class="section level2">
+<h2><span class="header-section-number">4.4</span> Striving for Simplicity</h2>
 <p>As with project organization, Excel files should be organized as simply as possible. If someone would need a detailed explanation to understand and start to use an Excel workbook, it is probably too complex. In most cases, following the above recommen- dations should accomplish this goal, but always keep it in mind regardless. If you’re ever unsure if your Excel workbook(s) is/are too complicated, ask a colleague to find a specific piece of data, and observe.</p>
-</div>
 </div>
 </div>
 
