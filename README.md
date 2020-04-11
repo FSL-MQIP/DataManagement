@@ -1,6 +1,7 @@
 # DataManagement
 This respository will contain recommendations for data management as well as other resources 
 
+## Recommendations for lab members:
 - See "Documents/GuideForDataManagement.pdf" for recommendations (link: https://github.com/FSL-MQIP/DataManagement/blob/master/Documents/GuideForDataManagement.pdf)
 
 ## Other resources:
