@@ -4,10 +4,10 @@ author: Sarah I. Murphy, et al. (original version was written by Dave Kent & Jos
   Reichler)
 date: '4/10/2020 - '
 output:
-  word_document:
-    toc: yes
   pdf_document:
     number_sections: yes
+    toc: yes
+  word_document:
     toc: yes
   html_document:
     number_sections: yes
@@ -20,13 +20,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # About
 
-This document details recommendations for organizing, moving, and storing data for all members of FSL-MQIP (Food Safety Laboratory and Milk Quality Improvement Program). It is written with the goals of improving the integrity, standardization, and ease of use of the data gathered and used by the lab. The recommendations are not absolute rules, but should be followed unless there is a very good and well-documented reason to deviate from the recommendations.
+This document details recommendations for organizing, moving, and storing data for all members of FSL-MQIP (Food Safety Laboratory and Milk Quality Improvement Program). It is written with the goals of improving the integrity, standardization, and ease of use of the data gathered and used by the lab. The recommendations are not absolute rules, but should be followed unless there is a very good and well-documented reason to deviate from the recommendations. We specifically discuss "projects" throughout this document, however the recommendations apply to many more types of work including grant proposals, research data, manuscripts, sequencing, reports, outside work, etc. Note: If you want to go outside of these recommendations, you need to ensure that your files are accessible to anyone who may need them--this requires you write a plan for accessibilty and have senior lab personnel approve the plan. 
 
-# Project Organization
-All information pertaining to a project should be kept in the same place, in a single project folder. This includes raw data, molecular work, analysis, notes, and reports, and so on. Exceptions may be made in the case that information is more tightly linked to another project, such as when measurements from one project are used again in another.
+# File Organization
+All information pertaining to a project should be kept in the same place, in a single project folder. This includes raw data, molecular work, analysis, notes, and reports, and so on. Exceptions may be made in the case that information is more tightly linked to another project, such as when measurements from one project are used again in another. 
 
 ## Project Folder Location
-It remains a point of discussion where the project folder should be located. It is agreed that it should be on the lab’s network drive, but there are currently two competing practices: inside personal folders, and in top-level folders (such as FOOD-MQIP.) A brief argument for each follows:
+It remains a point of discussion where the project folder should be located. We strongly discourage people from saving files to their local computer. Instead, files should be saved either on the server or an online location (e.g., GitHub, Google Drive, Cornell Box). Upon completion of projects all It is agreed that it should be on the lab’s network drive, but there are currently two competing practices: inside personal folders, and in top-level folders (such as FOOD-MQIP.) A brief argument for each follows:
 
 ### Arguments for Personal Folders
 •	There are closer ties of responsibility between the project and its owner.
@@ -72,8 +72,8 @@ If you prefer, you an create a folder called "archive" to store older versions o
 Anything much more complicated than the above example should be detailed in the project README. However, simplicity should be the goal: ideally, even if the README was lost, a person who is unfamiliar with a project should still be able to find any information they’re looking for about the project relatively painlessly.
 
 # General Data Curation
-## Canonical Data
-Canonical data is original or raw data that is absolutely accepted to be correct, beyond a shadow of a doubt. The integrity of any dataset flows from the integrity of its canonical data.
+## Raw Data
+Original (e.g., Q-count file, piece of paper with coliform Petrifilm counts) or raw data (data that has not been manipulated at all) that is absolutely accepted to be correct, beyond a shadow of a doubt. The integrity of any dataset flows from the integrity of its raw data.
 
 In general, whenever you have a piece of data, it should exist in a single canonical digital form. That is to say, for any given data point, whether it’s a row on a spreadsheet, a record in a database, or something else, there should be a single well-known location where the absolutely correct and current version of that data point can be found. If a correction or addition needs to be made to a data set, it should be made to this version, and nowhere else. Each of these canonical data points should be individually dated, so it is known when they were first recorded or last modified.
 
@@ -91,6 +91,34 @@ You may use spot-checking to ease the process, if you so choose: check 25% of yo
 Once a data point is in its canonical digital form,  any  copying from that data point  or deriving information from it (such as separating information kept in a sample ID) should not be done manually. Additionally, any changes or corrections to the data points themselves should be made to the canonical digital version, not to any copied versions, at which point new copies should be made.
 
 This is especially important if you find yourself doing a repetitive process to copy or derive information from many pieces of data. There is almost always a better method you could learn that is easier and less prone to error.1 If you don’t know where to start or just want some help figuring out how this might be done, please seek help rather than just doing the task manually.
+
+# Data Cleaning, Analysis, and Visualization
+
+## Code (programming for statistics)
+
+## Not code 
+If you are going to make something that is written in code, then you need to document how you did what you did. For example, take detailed notes in a text file while you are cleaning up data or extracting data from a database and then calculating a mean in excel. Another example is that if you use something like OpenRefine, then you can export the project file or the history of what you did and then put that on the server. 
+
+# Version Control
+If you are working on something without automated version control, then you need to implement your own plan for version control. For example, everytime that you work on a file, you then rename the file with the date and move the previous version to an Archive folder. For example: 
+
+> Sarah opened her manuscript to work on it on 4/16/2020--the last time she had worked on it was 4/15/2020--as such, before she started writing anything new she saved the word doc from previous name of sim4_JDS_manuscript_041520.doc to sim4_JDS_manuscript_041620.doc. Then, she moved sim4_JDS_manuscript_041520.doc to her "Archive" folder.
+
+
+If you are already working on GitHub then it's already set up for you. You can set-up version control using R, etc.; here are some resources:
+
+  * Guides for setting up version control using GitHub & R Studio
+      + https://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/ (simple guide w/ pictures)
+      + https://jennybc.github.io/2014-05-12-ubc/ubc-r/session03_git.html (guide w/ a bit more detail)
+      + https://happygitwithr.com/rstudio-git-github.html (guide w/ even more detail)
+
+If you are working Confluence, then version control is also set up for you. Here's a link to setting this up:
+
+Alternatives include Google Drive and Cornell Box, but you must put a copy of these files on the server upon completion of the project. 
+
+* If you are working on Google Drive, then here's another link:
+
+* If you are working on Cornell Box, then here's another link:
 
 # Excel 
 ## Workbook Organization
@@ -114,4 +142,5 @@ Additionally, avoid keeping manual calculations alongside raw data. If there is 
 
 ## Striving for Simplicity
 As with project organization, Excel files should be organized as simply as possible. If someone would need a detailed explanation to understand and start to use an Excel workbook, it is probably too complex. In most cases, following the above recommen- dations should accomplish this goal, but always keep it in mind regardless. If you’re ever unsure if your Excel workbook(s) is/are too complicated, ask a colleague to find a specific piece of data, and observe.
+
 
